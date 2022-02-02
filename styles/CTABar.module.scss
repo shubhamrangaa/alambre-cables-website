@@ -1,0 +1,31 @@
+@import "variables.module.scss";
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-dark;
+  color: $primary-light;
+  padding: 1rem;
+}
+
+.headingContainer {
+  max-width: 450px;
+}
+
+.buttonContainer {
+  display: flex;
+  padding: 1rem;
+  width: fit-content;
+
+  .btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+  }
+}
+
+.btnFilled {
+  background-color: black;
+}
