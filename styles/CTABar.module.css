@@ -1,7 +1,62 @@
 .container {
-  display: flex;
+  align-content: space-between;
   max-width: 1250px;
+  position: relative;
   justify-content: space-between;
-  background-color: black;
+  background-color: #000f14;
   color: white;
+  margin: 50px;
+  font-size: 25px;
+  border-top-color: rgb(20, 28, 105);
+  border-bottom: 1px solid;
+  line-height: 1em;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.text {
+  max-width: 450px;
+  justify-content: space-between;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px 60px 0;
+}
+.text h1 {
+  word-wrap: break-word;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_fill {
+  color: white;
+  background-color: rgb(55, 114, 255);
+  padding: 10px 10px;
+  border-radius: 50px;
+  margin: 0 10px 0 10px;
+}
+
+.btn_outline {
+  color: white;
+  background-color: black;
+  padding: 10px 10px;
+  border-radius: 50px;
+  border-color: white;
+  margin: 0 10px 0 10px;
+}
+
+@media only screen and (max-width = 700px) {
+  .btn_fill {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn_outline {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
