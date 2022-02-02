@@ -6,8 +6,14 @@
   align-items: left;
   padding: 0px 10px 0 50px;
 }
-.body {
+
+.heroContainer {
   display: flex;
+  align-items: center;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column;
   padding-left: 50px;
   font-size: 14px;
   line-height: 1.5;
@@ -16,12 +22,12 @@
   letter-spacing: 0.5px;
 }
 
-.body h1 {
+.contentContainer h1 {
   justify-content: space-between;
   padding: 0 10 0 50px;
 }
 
-.body p {
+.contentContainer p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 10px;
@@ -53,7 +59,6 @@
   float: right;
 }
 .button {
-  padding-left: 35px;
 }
 .btn_fill {
   color: white;
