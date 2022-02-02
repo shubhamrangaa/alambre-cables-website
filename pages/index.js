@@ -11,20 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        <CTABar />
-      </div>
-      {/* <div>
-        <div className={styles.container}>
-          <div className={styles.headingContainer}>
-            <h1>Get in touch today to get a free project quote</h1>
-          </div>
-          <div>
-            <button>Get in touch</button>
-            <button>View products</button>
-          </div>
-        </div>
-      </div> */}
+      <CTABar />
     </div>
   );
 }
