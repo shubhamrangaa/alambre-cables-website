@@ -1,0 +1,96 @@
+@import "variables.module.scss";
+
+.footerContainer {
+  background-color: $primary-dark;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: $primary-light;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+    padding: 5rem 3rem;
+  }
+}
+
+.imageContainer {
+  img {
+    width: 400px;
+  }
+}
+
+.contentColumn {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+
+  a,
+  p {
+    color: $tertiary-dark;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    color: $secondary-light;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: $primary-light;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 500px) {
+    max-width: 350px;
+    margin-bottom: 2rem;
+    h4 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+    h3 {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    a,
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.brandingColumn {
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
+  @media only screen and (max-width: 500px) {
+    display: flex;
+  }
+}
+
+.footerLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 300;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: 0.2s ease;
+  &:hover {
+    color: white;
+  }
+}
