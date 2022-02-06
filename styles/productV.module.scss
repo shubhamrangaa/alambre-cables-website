@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(215, 238, 241);
+  background-color: #f4f7ff;
 }
 
 .productWrapper {
@@ -24,9 +24,10 @@
 
   .pro {
     max-width: 300px;
-    padding: rem 1rem;
+    margin: 1rem 2rem;
+    padding: 1rem 1rem;
     background-color: #ffffff;
-    margin: 1rem;
+    border-radius: 16px;
   }
 
   h3 {

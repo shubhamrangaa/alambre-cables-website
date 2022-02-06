@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import aboutPic from "../public/about.svg";
+import aboutPic from "public/about.svg";
 import styles from "@styles/aboutV.module.scss";
 
 export default function AboutSection() {
