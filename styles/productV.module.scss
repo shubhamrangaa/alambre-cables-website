@@ -1,0 +1,80 @@
+@import "variables.module.scss";
+
+.productContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(215, 238, 241);
+}
+
+.productWrapper {
+  max-width: 1250px;
+  justify-content: space-between;
+  h1 {
+    text-align: center;
+    margin: 3rem 5rem 5rem;
+  }
+}
+
+.containerContent {
+  display: flex;
+  flex: 1;
+  line-height: 2;
+  justify-content: space-around;
+
+  .pro {
+    max-width: 300px;
+    padding: rem 1rem;
+    background-color: #ffffff;
+    margin: 1rem;
+  }
+
+  h3 {
+    text-align: left;
+    font-weight: bolder;
+  }
+  p {
+    justify-content: space-between;
+    color: $secondary-dark;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    h1,
+    h3 {
+      font-size: 0.8rem;
+    }
+    p,
+    .btn {
+      font-size: 0.2;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      font-size: 0.8rem;
+    }
+  }
+  @media only screen and (max-width: 295px) {
+    p,
+    h3 {
+      padding: 0.4rem;
+    }
+  }
+}
+
+.btn {
+  font-weight: bolder;
+}

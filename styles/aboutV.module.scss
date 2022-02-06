@@ -25,6 +25,9 @@
   flex-direction: column;
   max-width: 700px;
   line-height: 1.2;
+  .pro {
+    justify-content: space-around;
+  }
   h1 {
     font-size: 2rem;
     font-weight: lighter;
@@ -35,7 +38,6 @@
       font-weight: 750;
     }
   }
-
   p {
     justify-content: space-between;
     color: $secondary-dark;
