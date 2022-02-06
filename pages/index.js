@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import CTABar from "components/CTABar";
 import HeroSection from "components/HeroSection";
-import AboutSection from "components/aboutSection";
+import AboutSection from "@components/AboutSection";
 import Footer from "@components/footer";
 
 export default function Home() {
