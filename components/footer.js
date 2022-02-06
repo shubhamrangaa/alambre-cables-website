@@ -63,7 +63,7 @@ export default function Footer() {
                 src={whatsappLight}
                 width={"18px"}
                 height={"18px"}
-                alt="Phone icon"
+                alt="Whatsapp icon"
               ></Image>{" "}
               +91 9619363163
             </a>
@@ -75,7 +75,7 @@ export default function Footer() {
                 src={emailLight}
                 width={"18px"}
                 height={"18px"}
-                alt="Phone icon"
+                alt="Email icon"
               ></Image>{" "}
               info@alambrecables.com
             </a>

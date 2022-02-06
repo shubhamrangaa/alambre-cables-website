@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import CTABar from "components/CTABar";
 import HeroSection from "components/HeroSection";
 import AboutSection from "@components/AboutSection";
 import Footer from "@components/footer";
+import ProductSection from "@components/ProductSection";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeroSection />
+      <ProductSection />
       <AboutSection />
       <CTABar />
       <Footer />

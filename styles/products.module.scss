@@ -1,0 +1,45 @@
+@import "variables.module.scss";
+
+.productSectionContainer {
+  background-color: $secondary-light;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+
+  h3 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: $primary-dark;
+  }
+
+  p {
+    color: $secondary-dark;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.productsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $secondary-light;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .productSectionContainer h3 {
+    font-size: 2.5rem;
+  }
+
+  .productsContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

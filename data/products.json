@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "slug": "lan",
+      "name": "Lan Cables",
+      "description": "TFor over 40 years, the alambre family has been building cables and relationships that last. As a diversified cable manufacturing company Alambre is recognized as one of the leading cable manufacturers in India.",
+      "imageAddress": "/assets/images/lanProduct.png"
+    },
+    {
+      "slug": "fiber",
+      "name": "Fiber Cables",
+      "description": "TFor over 40 years, the alambre family has been building cables and relationships that last. As a diversified cable manufacturing company Alambre is recognized as one of the leading cable manufacturers in India.",
+      "imageAddress": "/assets/images/fiberProduct.avif"
+    },
+    {
+      "slug": "coaxial",
+      "name": "Co-axial Cables",
+      "description": "TFor over 40 years, the alambre family has been building cables and relationships that last. As a diversified cable manufacturing company Alambre is recognized as one of the leading cable manufacturers in India.",
+      "imageAddress": "/assets/images/lanProduct.png"
+    },
+    {
+      "slug": "cctv",
+      "name": "CCTV Cables",
+      "description": "TFor over 40 years, the alambre family has been building cables and relationships that last. As a diversified cable manufacturing company Alambre is recognized as one of the leading cable manufacturers in India.",
+      "imageAddress": "/assets/images/cctvProduct.avif"
+    }
+  ]
+}
