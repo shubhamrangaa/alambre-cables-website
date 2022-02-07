@@ -1,13 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
-import CTABar from "components/vaibhav/CTABar";
-import HeroSection from "components/vaibhav/HeroSection";
-import AboutSection from "@components/vaibhav/AboutSection";
+import CTABar from "components/CTABar";
+import HeroSection from "components/HeroSection";
+import AboutSection from "@components/AboutSection";
 import Footer from "@components/footer";
-import OurProducts from "@components/vaibhav/OurProducts";
+import ProductSection from "@components/ProductSection";
 import Navbar from "@components/vaibhav/Navbar";
 
-export default function Secondary() {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -17,8 +16,8 @@ export default function Secondary() {
       </Head>
       <Navbar />
       <HeroSection />
+      <ProductSection />
       <AboutSection />
-      <OurProducts />
       <CTABar />
       <Footer />
     </div>
