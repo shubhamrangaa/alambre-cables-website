@@ -1,4 +1,3 @@
-import Footer from "@components/footer";
 import SingleProductSection from "@components/SingleProductSection";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -30,7 +29,6 @@ export default function Product() {
         productDescription={currentProduct.description}
         imageAddress={currentProduct.imageAddress}
       />
-      <Footer />
     </div>
   ) : (
     <div>nothing found</div>

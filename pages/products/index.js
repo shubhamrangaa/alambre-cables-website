@@ -1,4 +1,3 @@
-import Footer from "@components/footer";
 import SingleProductSection from "@components/SingleProductSection";
 
 import { products } from "../../data/products.json";
@@ -16,8 +15,6 @@ export default function Product() {
           />
         );
       })}
-
-      <Footer />
     </div>
   );
 }

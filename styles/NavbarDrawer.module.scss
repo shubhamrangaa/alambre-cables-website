@@ -1,0 +1,76 @@
+@import "@styles/variables.module.scss";
+
+.hamburger {
+  width: 50px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: Pointer;
+}
+
+.drawerContainer {
+  // transition: 0.3s ease-in;
+  // right: -100%;
+  position: absolute;
+  transition: all 0.3s ease;
+
+  a {
+    color: $primary-light;
+    display: none;
+  }
+
+  @media only screen and (min-width: 700px) {
+    display: none;
+    width: 0px;
+  }
+}
+
+.drawerContainer.drawerInactive {
+  top: 0;
+  right: -100%;
+  transition: all 0.3s ease;
+}
+
+.drawerContainer.drawerActive {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  z-index: 1000;
+  color: $primary-light;
+  height: 100vh;
+  background-color: $primary-dark;
+  width: 100%;
+  top: 0px;
+  right: 0;
+  transition: all 0.4s ease;
+  padding: 1rem;
+
+  .topBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .linksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60%;
+  }
+
+  a {
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: Pointer;
+    color: white;
+  }
+}

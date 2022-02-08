@@ -1,0 +1,41 @@
+@import "@styles/variables.module.scss";
+
+.navContainer {
+  width: 100%;
+  position: fixed;
+  height: 70px;
+  background-color: $secondary-light;
+
+  .navWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 1rem;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    .rightNavItems {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2.5rem;
+      @media only screen and (max-width: 700px) {
+        display: none;
+      }
+
+      a {
+        color: $primary-dark;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+    }
+
+    .drawer {
+      display: block;
+      @media only screen and (min-width: 700px) {
+        display: none;
+      }
+    }
+  }
+}
