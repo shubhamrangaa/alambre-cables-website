@@ -1,16 +1,16 @@
 {
   "navLinks": [
     {
-      "name": "About",
-      "link": "/about"
-    },
-    {
-      "name": "Contact",
-      "link": "/contact"
+      "name": "Home",
+      "link": "/"
     },
     {
       "name": "Products",
       "link": "/products"
+    },
+    {
+      "name": "Contact",
+      "link": "/contact"
     }
   ]
 }
