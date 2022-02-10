@@ -3,26 +3,34 @@
     {
       "slug": "lan",
       "name": "Lan Cables",
-      "description": "TFor over 40 years, the alambre family has been building cables and relationships that last. As a diversified cable manufacturing company Alambre is recognized as one of the leading cable manufacturers in India.",
-      "imageAddress": "/assets/images/lanProduct.png"
+      "description": "Alambre LAN cables carries a wide range of Networking cables for a variety of purposes. Be it for building a new network or simply expanding an existing network or upgrading one.",
+      "imageAddress": "/assets/images/lanProduct.png",
+      "iconAddress": "/assets/icons/lan.png",
+      "link": "/products/lan"
     },
     {
       "slug": "fiber",
       "name": "Fiber Cables",
-      "description": "TFor over 40 years, the alambre family has been building cables and relationships that last. As a diversified cable manufacturing company Alambre is recognized as one of the leading cable manufacturers in India.",
-      "imageAddress": "/assets/images/fiberProduct.avif"
+      "description": "With Superior performance, future-proof and cost-effective optical fiber cables we support cable solutions for high-speed data transmission.",
+      "imageAddress": "/assets/images/fiberProduct.avif",
+      "iconAddress": "/assets/icons/optical-fiber.png",
+      "link": "/products/fiber"
     },
     {
       "slug": "coaxial",
       "name": "Co-axial Cables",
-      "description": "TFor over 40 years, the alambre family has been building cables and relationships that last. As a diversified cable manufacturing company Alambre is recognized as one of the leading cable manufacturers in India.",
-      "imageAddress": "/assets/images/lanProduct.png"
+      "description": "Whether you need cables for satellite, security, cctv or video applications, residential or commercial. We offer a family of high-performance co-axial cables.",
+      "imageAddress": "/assets/images/lanProduct.png",
+      "iconAddress": "/assets/icons/coaxial.png",
+      "link": "/products/coaxial"
     },
     {
       "slug": "cctv",
       "name": "CCTV Cables",
-      "description": "TFor over 40 years, the alambre family has been building cables and relationships that last. As a diversified cable manufacturing company Alambre is recognized as one of the leading cable manufacturers in India.",
-      "imageAddress": "/assets/images/cctvProduct.avif"
+      "description": "Bee-Link are Manufacturers of CCTV Cables using the best Raw materials, making an excellent choice to transmit the complete and finest video frequency range.",
+      "imageAddress": "/assets/images/cctvProduct.avif",
+      "iconAddress": "/assets/icons/cctv-camera.png",
+      "link": "/products/cctv"
     }
   ]
 }

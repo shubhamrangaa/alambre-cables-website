@@ -42,24 +42,30 @@ const Contact = () => {
         </div>
         <div className={styles.formContainer}>
           <form>
-            <label>Name</label>
-            <input
-              name="name"
-              placeholder="Michael Schumacher"
-              onChange={handleChange}
-            ></input>
-            <label>Email</label>
-            <input
-              name="email"
-              placeholder="michael@formula1.com"
-              onChange={handleChange}
-            ></input>
-            <label>Message</label>
-            <input
-              name="message"
-              placeholder="eg: I have a query about ..."
-              onChange={handleChange}
-            ></input>
+            <div className={styles.formUpperContainer}>
+              <div className={styles.leftInputContainer}>
+                <label>Name</label>
+                <input
+                  name="name"
+                  placeholder="Michael Schumacher"
+                  onChange={handleChange}
+                ></input>
+                <label>Email</label>
+                <input
+                  name="email"
+                  placeholder="michael@formula1.com"
+                  onChange={handleChange}
+                ></input>
+              </div>
+              <div className={styles.messageContainer}>
+                <label>Message</label>
+                <input
+                  name="message"
+                  placeholder="eg: I have a query about ..."
+                  onChange={handleChange}
+                ></input>
+              </div>
+            </div>
             <button onClick={handleSubmit}>Send message</button>
           </form>
         </div>
