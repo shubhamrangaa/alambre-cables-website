@@ -9,7 +9,7 @@ export default function Product() {
   const router = useRouter();
   const { product } = router.query;
   const queryProduct = product;
-  console.log(queryProduct);
+  // console.log(queryProduct);
 
   let found = {};
   for (let product of products) {
@@ -18,7 +18,7 @@ export default function Product() {
     }
   }
 
-  console.log(found);
+  // console.log(found);
   if (currentProduct.name !== found.name) {
     setCurrentProduct(found);
   }

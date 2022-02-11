@@ -11,6 +11,14 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!state.email) {
+      alert("Please enter a valid email");
+      return;
+    }
+    if (!state.name) {
+      alert("Please enter a valid name");
+      return;
+    }
     const res = await fetch(
       process.env.GOOGLE_SHEETS_POST_URL ||
         "https://script.google.com/macros/s/AKfycbxjg0qRTdbzCygse5-DRmFFvWRpe9DebNnayintCHH0LZfkBA5UEBp2B-SJac46od8F/exec",
@@ -22,7 +30,7 @@ const Contact = () => {
         body: `name=${state.name}&email=${state.email}&message=${state.message}`,
       }
     );
-    console.log(res);
+    // console.log(res);
     if (res.status === 200) {
       window.alert("Message sent successfully");
     }
@@ -59,12 +67,14 @@ const Contact = () => {
               <div className={styles.leftInputContainer}>
                 <label>Name</label>
                 <input
+                  required
                   name="name"
                   placeholder="Michael Schumacher"
                   onChange={handleChange}
                 ></input>
                 <label>Email</label>
                 <input
+                  required
                   name="email"
                   placeholder="michael@formula1.com"
                   onChange={handleChange}
