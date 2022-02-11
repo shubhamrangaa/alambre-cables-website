@@ -23,10 +23,7 @@ export default function Footer() {
             <Link href="/products">
               <a className={styles.footerLink}>Products</a>
             </Link>
-            <Link href="/about">
-              <a className={styles.footerLink}>About</a>
-            </Link>
-            <Link href="/about">
+            <Link href="/contact">
               <a className={styles.footerLink}>Contact us</a>
             </Link>
           </div>
