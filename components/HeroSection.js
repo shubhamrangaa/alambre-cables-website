@@ -32,7 +32,7 @@ export default function HeroSection() {
               </Link>
             </div>
           </div>
-          <div>
+          <div className={styles.heroImage}>
             <Image
               src="/assets/images/lanBrandColors.png"
               alt="Lan cable"

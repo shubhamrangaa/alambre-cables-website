@@ -1,4 +1,5 @@
 import SingleProductSection from "@components/SingleProductSection";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { products } from "../../data/products.json";
@@ -23,13 +24,23 @@ export default function Product() {
   }
 
   return currentProduct ? (
-    <div>
-      <SingleProductSection
-        productName={currentProduct.name}
-        productDescription={currentProduct.description}
-        imageAddress={currentProduct.imageAddress}
-      />
-    </div>
+    <>
+      <Head>
+        <title>Alambre Cables | Products</title>
+        <meta
+          name="description"
+          content="Browse products form Alambre cables"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div>
+        <SingleProductSection
+          productName={currentProduct.name}
+          productDescription={currentProduct.description}
+          imageAddress={currentProduct.imageAddress}
+        />
+      </div>
+    </>
   ) : (
     <div>nothing found</div>
   );
