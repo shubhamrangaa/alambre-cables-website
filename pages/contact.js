@@ -1,5 +1,6 @@
 const { useState } = require("react");
 import styles from "@styles/contact.module.scss";
+import Head from "next/head";
 
 const Contact = () => {
   const [state, setState] = useState({
@@ -21,6 +22,10 @@ const Contact = () => {
         body: `name=${state.name}&email=${state.email}&message=${state.message}`,
       }
     );
+    console.log(res);
+    if (res.status === 200) {
+      window.alert("Message sent successfully");
+    }
   };
 
   function handleChange(evt) {
@@ -35,6 +40,14 @@ const Contact = () => {
 
   return (
     <>
+      <Head>
+        <title>Alambre Cables | Contact</title>
+        <meta
+          name="description"
+          content="Get in touch with alambre cables today!"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.contactContainer}>
         <div className={styles.headingContainer}>
           <h1>Get in touch</h1>
@@ -59,11 +72,11 @@ const Contact = () => {
               </div>
               <div className={styles.messageContainer}>
                 <label>Message</label>
-                <input
+                <textarea
                   name="message"
                   placeholder="eg: I have a query about ..."
                   onChange={handleChange}
-                ></input>
+                ></textarea>
               </div>
             </div>
             <button onClick={handleSubmit}>Send message</button>

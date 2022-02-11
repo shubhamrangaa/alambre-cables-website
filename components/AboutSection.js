@@ -29,13 +29,13 @@ export default function AboutSection() {
               company Alambre is recognized as one of the leading cable
               manufacturers in India.
             </p>
-            <div className={styles.buttonContainer}>
+            {/* <div className={styles.buttonContainer}>
               <Link href="/about">
                 <a className={`${styles.btnOutlineColor} ${styles.btn}`}>
                   Learn more
                 </a>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

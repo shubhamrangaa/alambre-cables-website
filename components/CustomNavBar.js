@@ -2,6 +2,7 @@ import styles from "@styles/customNavbar.module.scss";
 import NavbarDrawer from "./NavbarDrawer";
 import * as navInfo from "../data/navLinks";
 import Link from "next/link";
+import Image from "next/image";
 
 const CustomNavBar = () => {
   const { navLinks } = navInfo;
@@ -12,7 +13,12 @@ const CustomNavBar = () => {
           <div className={styles.leftNavItems}>
             <Link href="/">
               <a>
-                <img src="/assets/images/alambreLogo.png"></img>
+                <Image
+                  src="/assets/images/alambreLogoDarkBG.png"
+                  height={"70px"}
+                  width={"150px"}
+                  alt="Alambre logo"
+                />
               </a>
             </Link>
           </div>

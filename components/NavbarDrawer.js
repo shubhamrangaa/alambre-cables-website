@@ -1,4 +1,6 @@
 import styles from "@styles/NavbarDrawer.module.scss";
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { navLinks } from "../data/navLinks";
 
@@ -22,7 +24,18 @@ const NavbarDrawer = () => {
         }
       >
         <div className={styles.topBar}>
-          <div>logo</div>
+          <div>
+            <Link href="/">
+              <a>
+                <Image
+                  src="/assets/images/alambreLogoDarkBG.png"
+                  height={"70px"}
+                  width={"150px"}
+                  alt="Alambre logo"
+                />
+              </a>
+            </Link>
+          </div>
           <button
             onClick={toggleDrawer}
             style={!isOpen ? { display: "none" } : {}}
@@ -31,13 +44,21 @@ const NavbarDrawer = () => {
           </button>
         </div>
         <div className={styles.linksContainer}>
-          {navLinks.map((link, index) => {
-            return (
-              <a key={index} href={link.link}>
-                {link.name}
-              </a>
-            );
-          })}
+          <div>
+            {navLinks.map((link, index) => {
+              return (
+                <a key={index} href={link.link}>
+                  {link.name}
+                </a>
+              );
+            })}
+          </div>
+          <a
+            className={`${styles.btn} ${styles.btnFilled}`}
+            href="mailto:info@alambrecables.com"
+          >
+            Email us
+          </a>
         </div>
       </div>
     </>

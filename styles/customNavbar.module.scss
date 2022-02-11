@@ -5,6 +5,7 @@
   position: fixed;
   height: 70px;
   background-color: $secondary-light;
+  z-index: 999;
 
   .navWrapper {
     display: flex;

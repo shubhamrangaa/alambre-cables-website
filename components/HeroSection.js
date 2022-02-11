@@ -1,4 +1,5 @@
 import styles from "@styles/hero.module.scss";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -30,6 +31,14 @@ export default function HeroSection() {
                 </a>
               </Link>
             </div>
+          </div>
+          <div>
+            <Image
+              src="/assets/images/lanBrandColors.png"
+              alt="Lan cable"
+              width={"425px"}
+              height={"400px"}
+            />
           </div>
         </div>
       </div>
