@@ -12,7 +12,7 @@ export default function ProductSection() {
           return (
             <ProductCard
               key={index}
-              productName={product.productName}
+              productName={product.name}
               description={product.description}
               imageAddress={product.iconAddress}
               productLink={product.link}
