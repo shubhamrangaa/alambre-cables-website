@@ -10,3 +10,17 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+
+// //vaibhav
+// import Footer from "@components/vaibhav/Footer";
+// import "../styles/footerV.module.css";
+
+// function MyApp({ Component, pageProps }) {
+//   return (
+//     <Footer>
+//       <Component {...pageProps} />
+//     </Footer>
+//   );
+// }
+
+// export default MyApp;

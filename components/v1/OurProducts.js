@@ -11,6 +11,7 @@ export default function product() {
           <div className={styles.containerContent}>
             <div className={styles.pro}>
               <h3>Lan Cables</h3>
+              <img className={styles.image} src="\assets\icons\lan.png"></img>
               <p>
                 With superior perfomace, future-proof and cost effective optical
                 cables we support cable solutions for high speed data{" "}
@@ -21,6 +22,10 @@ export default function product() {
             </div>
             <div className={styles.pro}>
               <h3>Fiber Cables</h3>
+              <img
+                className={styles.image}
+                src="\assets\icons\optical-fiber.png"
+              ></img>
               <p>
                 With superior perfomace, future-proof and cost effective optical
                 cables we support cable solutions for high speed data{" "}
@@ -31,6 +36,10 @@ export default function product() {
             </div>
             <div className={styles.pro}>
               <h3>Co-axial Cables</h3>
+              <img
+                className={styles.image}
+                src="\assets\icons\coaxial.png"
+              ></img>
               <p>
                 With superior perfomace, future-proof and cost effective optical
                 cables we support cable solutions for high speed data{" "}
@@ -41,6 +50,10 @@ export default function product() {
             </div>
             <div className={styles.pro}>
               <h3>CCTV</h3>
+              <img
+                className={styles.image}
+                src="\assets\icons\cctv-camera.png"
+              ></img>
               <p>
                 With superior perfomace, future-proof and cost effective optical
                 cables we support cable solutions for high speed data{" "}
